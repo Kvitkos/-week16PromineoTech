@@ -1,0 +1,25 @@
+.create-form label{
+    text-align: left;
+    color: black !important;
+    font-size: 12px !important;
+  }
+
+.cute-member img {
+  width: 75%;
+}
+
+h2 {
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 2rem;
+} 
+
+.name-font {
+  font-family: 'Shantell Sans';
+  font-size: 2rem;
+  text-shadow: 1px 1px #ffffff;
+}
+
+img {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
+}

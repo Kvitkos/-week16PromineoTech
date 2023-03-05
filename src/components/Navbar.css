@@ -1,0 +1,17 @@
+.navbar-brand {
+    font-size: 25px;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu {
+    margin-top: 0px;
+}
+
+.nav-link {
+    font-size: 15px;
+}
+
+.dropdown-item {
+    font-size: 20px;
+}

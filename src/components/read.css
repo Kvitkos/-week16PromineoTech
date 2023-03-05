@@ -1,0 +1,12 @@
+.member-img img {
+    width: 40%;
+}
+
+.member-img {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    text-align: left;
+}
