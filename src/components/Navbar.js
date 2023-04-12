@@ -7,7 +7,7 @@ export default class Navbar extends Component {
         return (
             <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
                 <Link className='navbar-brand' to='/'>
-                    Dogg Days
+                    Vitkos National
                 </Link>
                 <button 
                     className='navbar-toggler'
@@ -30,17 +30,17 @@ export default class Navbar extends Component {
                             Members
                             </NavLink>
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <NavLink exact to='/members/iggy' className="dropdown-item">Iggy</NavLink>
-                                <NavLink exact to='/members/bonnie' className="dropdown-item">Bonnie</NavLink>
-                                <NavLink exact to='/members/buster' className="dropdown-item">Buster</NavLink>
-                                <NavLink exact to='/members/oswald' className="dropdown-item">Oswald</NavLink>
-                                <NavLink exact to='/members/ella' className="dropdown-item">Ella</NavLink>
-                                <NavLink exact to='/members/pickles' className="dropdown-item">Pickles</NavLink>
-                                <NavLink exact to='/read' className="dropdown-item">Coming Soon</NavLink>
+                                <NavLink exact to='/members/Tiger Woods' className="dropdown-item">Tiger Woods</NavLink>
+                                <NavLink exact to='/members/Justin Thomas' className="dropdown-item">Justin Thomas</NavLink>
+                                <NavLink exact to='/members/Fred Couples' className="dropdown-item">Fred Couples</NavLink>
+                                <NavLink exact to='/members/Brooks Keopka' className="dropdown-item">Brooks Keopka</NavLink>
+                                <NavLink exact to='/members/Jordan Spieth' className="dropdown-item">Jordan Spieth</NavLink>
+                                <NavLink exact to='/members/Jon Rahm' className="dropdown-item">Jon Rahm</NavLink>
+                                <NavLink exact to='/read' className="dropdown-item">Waiting List</NavLink>
                                 </div>
                         </li>
                         <li className='nav-item'>
-                            <NavLink exact to='/create' className='nav-link'>Enroll</NavLink>
+                            <NavLink exact to='/create' className='nav-link'>Apply for Membership</NavLink>
                         </li>
                     </ul>
                 </div>

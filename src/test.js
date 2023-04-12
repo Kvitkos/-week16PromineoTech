@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { Button } from 'semantic-ui-react';
 import "./read.css";
-import dog from "../images/dog.jpg";
+import player from "../images/Player.jpg";
 
 export default function Read() {
     const getData = () => {
@@ -20,13 +20,13 @@ export default function Read() {
     }
     
     const setData = (data) => {
-        let { id, dogName, dogBreed, ownerName, dogAbout, ownerEmail } = data;
+        let { id, playerName, playerNationality, winsNumber, playerAbout, PlayersEmail } = data;
         localStorage.setItem('ID', id);
-        localStorage.setItem('Dog Name', dogName);
-        localStorage.setItem('Dog Breed', dogBreed);
-        localStorage.setItem('Owner Name', ownerName);
-        localStorage.setItem('About Dog', dogAbout);
-        localStorage.setItem('Owner Email', ownerEmail)
+        localStorage.setItem('player Name', playerName);
+        localStorage.setItem('player Nationality', playerNationality);
+        localStorage.setItem('winsNumber', winsNumber);
+        localStorage.setItem('About player', playerAbout);
+        localStorage.setItem('player email', PlayersEmail)
     }
     
     const [APIData, setAPIData] = useState([]);
@@ -44,15 +44,15 @@ export default function Read() {
                         <div className='col-11 col-lg-5'>
                         {APIData.map((data) => (
                             <div className='member-detail-card card'>
-                                <img className='card-img-top mx-auto mt-5' src={dog} alt='' />
+                                <img className='card-img-top mx-auto mt-5' src={player} alt='' />
                                 <div className="card-header">
-                                    <h2 className='card-title text-center'>{data.dogName}, Coming Soon!</h2>  
+                                    <h2 className='card-title text-center'>{data.playerName}, Waiting List!</h2>  
                                 </div>
                                 <div className='card-body'>
                                     <ul className='list-group list-group-flush'>
-                                        <li className='list-group-item'><strong>Breed:</strong> {data.dogBreed}</li>
-                                        <li className='list-group-item'><strong>Owner(s):</strong> {data.ownerName}</li>
-                                        <li className='list-group-item'><strong>About:</strong> {data.dogAbout}</li>
+                                        <li className='list-group-item'><strong>Nationality:</strong> {data.playerNationality}</li>
+                                        <li className='list-group-item'><strong>winsNumber(s):</strong> {data.winsNumber}</li>
+                                        <li className='list-group-item'><strong>About:</strong> {data.playerAbout}</li>
                                     </ul>
                                     <div className='card-body'>
                                         <p>Thank you so much for your entry. We'll be in touch soon!</p>
@@ -84,7 +84,6 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { Table, Button } from 'semantic-ui-react';
 import "./read.css";
-import dog from "../images/dog.jpg";
 
 export default function Read() {
 const getData = () => {
@@ -102,13 +101,13 @@ const onDelete = (id) => {
 }
 
 const setData = (data) => {
-    let { id, dogName, dogBreed, ownerName, dogAbout, ownerEmail } = data;
+    let { id, playerName, playerNationality, winsNumber, playerAbout, PlayersEmail } = data;
     localStorage.setItem('ID', id);
-    localStorage.setItem('Dog Name', dogName);
-    localStorage.setItem('Dog Breed', dogBreed);
-    localStorage.setItem('Owner Name', ownerName);
-    localStorage.setItem('About Dog', dogAbout);
-    localStorage.setItem('Owner Email', ownerEmail)
+    localStorage.setItem('player Name', playerName);
+    localStorage.setItem('player Nationality', playerNationality);
+    localStorage.setItem('winsNumber', winsNumber);
+    localStorage.setItem('About player', playerAbout);
+    localStorage.setItem('player email', PlayersEmail)
 }
 
 const [APIData, setAPIData] = useState([]);
@@ -129,28 +128,28 @@ const [APIData, setAPIData] = useState([]);
                             <Table.Row>
                                 <Table.Cell>
                                 <div className="member-img mt-5">
-                                <img src={dog} alt='' />
+                                <img src={player} alt='' />
                                 </div>
                                 </Table.Cell>
                             </Table.Row>
                             <Table.Row>
                             <Table.Cell>    
-                                <h2 className="text-center">{data.dogName}</h2>
+                                <h2 className="text-center">{data.playerName}</h2>
                             </Table.Cell>
                             </Table.Row>
                             <Table.Row>
                             <Table.Cell>
-                                <p>Breed: {data.dogBreed}</p>
+                                <p>Nationality: {data.playerNationality}</p>
                             </Table.Cell>
                             </Table.Row>
                             <Table.Row>
                             <Table.Cell>
-                                <p>Owner: {data.ownerName}</p>
+                                <p>Number of wins: {data.winsNumber}</p>
                             </Table.Cell>
                             </Table.Row>
                             <Table.Row>
                             <Table.Cell>
-                                <p>About {data.dogName}: {data.dogAbout}</p>
+                                <p>About {data.playerName}: {data.playerAbout}</p>
                             </Table.Cell>
                             </Table.Row>
                             <Table.Row>

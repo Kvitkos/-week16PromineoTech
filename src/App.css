@@ -67,7 +67,7 @@ img {
 
 .Home,
 .Members,
-.Enroll,
+.Appy for Membership,
 .Read,
 .Update {
   height: auto;
@@ -77,7 +77,7 @@ img {
 }
 
 .jumbotron {
-  background-image:url('./images/cover.jpg');
+  background-image:url('./images/Augusta National.jpg');
   height:800px;
   width: 100%;
   background-repeat: no-repeat;

@@ -2,57 +2,57 @@ import React, { Component } from 'react';
 import Routes from './components/Routes';
 import Navbar from './components/Navbar';
 import "./App.css";
-import buster from "./images/buster.jpg";
-import ella from "./images/ella.jpg";
-import pickles from "./images/pickles.jpg";
-import oswald from "./images/oswald.jpg";
-import bonnie from "./images/bonnie.jpg";
-import iggy from "./images/iggy.jpg";
+import FredCouples from "./images/Fred Couples.jpg";
+import JordanSpieth from "./images/Jordan Spieth.jpg";
+import JonRahm from "./images/Jon Rahm.jpeg";
+import BrooksKeopka from "./images/Brooks Keopka.jpg";
+import JustinThomas from "./images/Justin Thomas.jpg";
+import TigerWoods from "./images/Tiger Woods.jpg";
  
 export default class App extends Component {
   static defaultProps =  {
     members: [
     {
-        name: "Iggy",
-        src: iggy,
-        breed: "Shih Tzu",
-        owner: "Molly Tucker",
-        about: "Iggy is super spunky and loves his food."
+        name: "Tiger Woods",
+        src: TigerWoods,
+        Nationality: "United States",
+        winsNumber: "82",
+        about: "Tiger Woods has 82 PGA Tour wins and 15 Major Championship wins"
     },
     {
-        name: "Bonnie",
-        src: bonnie,
-        breed: "Labrador",
-        owner: "The White Family",
-        about: "Bonnie LOVES the water."
+        name: "Justin Thomas",
+        src: JustinThomas,
+        Nationality: "United States",
+        winsNumber: "17",
+        about: "Justin Thomas has 15 PGA Tour wins and 2 Major Championship wins."
     },
     {
-        name: "Buster",
-        src: buster,
-        breed: "French Bulldog",
-        owner: "Tyrone",
-        about: "Buster is still a puppy, but he's figuring things out."
+        name: "Fred Couples",
+        src: FredCouples,
+        Nationality: "United States",
+        winsNumber: "16",
+        about: "Fred Couples has 15 PGA Tour wins and 1 Major Championship wins ."
     },
     {
-        name: "Oswald",
-        src: oswald,
-        breed: "Weimaraner",
-        owner: "KC Aela",
-        about: "Oswald will play fetch with you all day long!"
+        name: "Brooks Keopka",
+        src: BrooksKeopka,
+        Nationality: "United States",
+        winsNumber: "11",
+        about: "Brooks Keopka has 8 PGA Tour wins and 3 Major Championship wins"
     },
     {
-        name: "Ella",
-        src: ella,
-        breed: "Pitbull Mix",
-        owner: "Sheila E.",
-        about: "She is very protective of her people."
+        name: "Jordan Spieth",
+        src: JordanSpieth,
+        Nationality: "United States",
+        winsNumber: "16",
+        about: "Jordan Spieth has 13 PGA Tour wins and 3 Major Championship wins."
     }, 
     {
-        name: "Pickles",
-        src: pickles,
-        breed: "Schnauzer",
-        owner: "LouAnn Smith",
-        about: "'I am the goodest boy!'"
+        name: "Jon Rahm",
+        src: JonRahm,
+        Nationality: "Spain",
+        winsNumber: "13",
+        about: "Jon Rahm has 11 PGA Tour wins and 2 Major Championship wins"
     }
     ]
   }
